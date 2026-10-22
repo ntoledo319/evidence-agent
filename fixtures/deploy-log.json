@@ -1,0 +1,21 @@
+{
+  "source": "fixture:deploy-log",
+  "description": "FIXTURE DATA (offline demo, not live): deployment records for the checkout service.",
+  "items": [
+    {
+      "id": "DEP-2026-09-14",
+      "content": "Deploy DEP-2026-09-14: checkout-service v2.7.0 shipped the recommendations feature; migration added the recommendations table but no index on customer_id.",
+      "tags": ["checkout", "deploy", "migration"]
+    },
+    {
+      "id": "DEP-2026-09-27",
+      "content": "Deploy DEP-2026-09-27: payments-gateway config refresh rolled out; certificate renewal was scheduled but the new cert was never loaded by the ingress.",
+      "tags": ["payments", "deploy", "tls"]
+    },
+    {
+      "id": "DEP-2026-10-02",
+      "content": "Deploy DEP-2026-10-02: checkout-service v2.7.2 added a covering index on recommendations(customer_id); p95 latency returned to 320ms.",
+      "tags": ["checkout", "deploy", "latency"]
+    }
+  ]
+}

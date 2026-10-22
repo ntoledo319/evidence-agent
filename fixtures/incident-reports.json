@@ -1,0 +1,21 @@
+{
+  "source": "fixture:incident-reports",
+  "description": "FIXTURE DATA (offline demo, not live): postmortem excerpts for the checkout service.",
+  "items": [
+    {
+      "id": "INC-1042",
+      "content": "Incident INC-1042: checkout latency spiked to 2.3s p95 after the 2026-09-14 deploy because the new recommendations query ran without a covering index.",
+      "tags": ["checkout", "latency", "incident"]
+    },
+    {
+      "id": "INC-1051",
+      "content": "Incident INC-1051: payment authorizations failed for 40 minutes on 2026-09-28; root cause was an expired TLS certificate on the payments-gateway upstream.",
+      "tags": ["payments", "tls", "incident"]
+    },
+    {
+      "id": "INC-1058",
+      "content": "Incident INC-1058: checkout error rate rose to 4% during the 2026-10-06 traffic surge; autoscaler capped at 20 pods by a stale HPA maxReplicas setting.",
+      "tags": ["checkout", "autoscaling", "incident"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "evidence-agent",
+  "version": "0.1.0",
+  "description": "Open Agent Hackathon baseline: evidence-backed research agent with Meterless H-MEM and Zetaris SQL.",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "setup": "npx --yes degit meterless/meterless/engines/hmem/reference vendor/hmem && cd vendor/hmem && npm install --no-audit --no-fund",
+    "notebook": "tsx notebook.ts",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}

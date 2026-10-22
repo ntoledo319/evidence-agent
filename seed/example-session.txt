@@ -1,0 +1,4 @@
+The evidence agent separates source rows from model claims.
+Incident reports and deployment logs are distinct evidence sources.
+Zetaris SQL supplies live evidence when local credentials are configured.
+Meterless H-MEM keeps provenance for every remembered source row.
